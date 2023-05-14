@@ -22,6 +22,12 @@ const styles = StyleSheet.create({
     height: 170,
     borderRadius: 8,
   },
+  avaliacaoPizzas: {
+    fontSize: 10,
+    color: "#fff",
+    paddingLeft: 4,
+  },
+  
 });
 
 export default styles;

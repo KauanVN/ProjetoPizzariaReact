@@ -11,7 +11,7 @@ export default function Search(){
         <View style= {styles.containerSearch}> 
 
                   
-                <TextInput style= {styles.inputSearch} placeholder="Digite o filme que deseja buscar"></TextInput>
+                <TextInput style= {styles.inputSearch} placeholder="Digite o sabor da pizza que deseja buscar"></TextInput>
                 
 
         </View>

@@ -6,6 +6,7 @@ import Header from "./src/components/header";
 import SearchBar from "./src/components/searchbar";
 import CardPizzas from "./src/components/cardPizzas";
 import CardSeries from "./src/components/cardSeries";
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
         
         titulo = {item.nome}
         preco = {item.preco}
+        avaliacao={item.avaliacao}
         imagem = {item.imagem}
 
         />
@@ -80,4 +82,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#141a29",
     alignItems: "center",
   },
+  
 });
+

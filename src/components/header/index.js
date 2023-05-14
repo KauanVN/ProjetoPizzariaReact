@@ -15,7 +15,7 @@ export default function Header(){
 
                 </TouchableOpacity>
                 
-                <Text style={styles.textHeader}>   TEC FILMES  </Text>
+                <Text style={styles.textHeader}>   PIZZARIA FAZZBEAR  </Text>
             
             </View>
     );

@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import BannerPizzas from "./src/components/bannerPizzas";
 import Pizzas from "./src/data/pizzas";
-import Series from "./src/data/esfirras";
+import Series from "./src/data/Esfirras";
 import Header from "./src/components/header";
 import SearchBar from "./src/components/searchbar";
 import CardPizzas from "./src/components/cardPizzas";
 import CardSeries from "./src/components/cardEsfirras";
+import CardEsfirras from "./src/components/cardEsfirras";
+
 
 
 export default function App() {
@@ -50,7 +52,7 @@ export default function App() {
 
                      marginRight: 75,
 
-                     textAlign:'center'}}> Series</Text>
+                     textAlign:'center'}}>Esfirras </Text>
 <FlatList
       horizontal ={true}
       showsHorizontalScrollIndicator={false}
@@ -58,11 +60,13 @@ export default function App() {
         keyExtractor={(item) => item.id}
         renderItem={ ({item}) => (
         
-        <CardSeries
+        <CardEsfirras
         
         titulo = {item.nome}
-        nota = {item.nota}
+        preco = {item.preco}
+        avaliacao={item.avaliacao}
         imagem = {item.imagem}
+       
 
         />
         )}
@@ -76,10 +80,12 @@ export default function App() {
   );
 }
 
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#141a29",
+    backgroundColor: "purple",
     alignItems: "center",
   },
   

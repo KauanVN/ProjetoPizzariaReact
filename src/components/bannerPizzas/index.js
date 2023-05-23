@@ -6,7 +6,7 @@ import styles from "./style";
 
 export default function BannerPizzas(){
 
-    const imagem = Math.floor(Math.random() * 10 +1);
+    const imagem = Math.floor(Math.random() * 20 +1);
 
     return(
 

@@ -1,12 +1,12 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import BannerPizzas from "./src/components/bannerPizzas";
 import Pizzas from "./src/data/pizzas";
-import Series from "./src/data/series";
+import Series from "./src/data/esfirras";
 import Header from "./src/components/header";
 import SearchBar from "./src/components/searchbar";
 import CardPizzas from "./src/components/cardPizzas";
-import CardSeries from "./src/components/cardSeries";
-import { LinearGradient } from 'expo-linear-gradient';
+import CardSeries from "./src/components/cardEsfirras";
+
 
 export default function App() {
   return (

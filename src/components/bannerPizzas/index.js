@@ -1,22 +1,24 @@
-import React,{Fragment} from "react";
-import {Image, Text} from 'react-native';
+import React, {Fragment} from "react"
+import { Image, Text } from "react-native"
 import styles from "./style";
 
-
-
-export default function BannerPizzas(){
+export default function BannerPizzas () {
 
     const imagem = Math.floor(Math.random() * 20 +1);
+    return (
 
-    return(
+    <>
+    
+        <Text style = {styles.textBanner}> Em cartaz </Text>
 
-        
-        <>
-            <Text style = {styles.textBanner}> Recomendação </Text>
-
-            <Image style = {styles.imageBanner} source = {require(`../../Img/${imagem}.jpg`)}/>
-        </>
+        <Image style = {styles.imageBanner} source = {require(`../../Img/${imagem}.jpg`)} />
+    
+    
+    
+    
+    
+    </>
 
 
     );
-}
+} 

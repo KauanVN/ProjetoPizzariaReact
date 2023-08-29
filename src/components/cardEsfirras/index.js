@@ -6,14 +6,14 @@ import { Image, Text,TouchableOpacity} from "react-native";
 import styles from "./style";
 import { useNavigation } from "@react-navigation/core";
 
-export default function CardEsfirras({nome,imagem,avaliacao,preco}) {
+export default function CardEsfirras({nome,preco,avaliacao,imagem}) {
 
 
     const navigation = useNavigation()
 
   return (
 
-    <TouchableOpacity onPress ={() => navigation.navigate('details' , {nome:nome , imagem:imagem, avaliacao:avaliacao, preco:preco})} style = {styles.containerEsfirras}>
+    <TouchableOpacity onPress ={() => navigation.navigate('details' , {nome:nome , preco:preco, avaliacao:avaliacao, imagem:imagem})}  style = {styles.containerEsfirras}>
 
       <Image style = {styles.imagemEsfirras} source={require(`../../Img/${imagem}`)} />
 
@@ -21,7 +21,7 @@ export default function CardEsfirras({nome,imagem,avaliacao,preco}) {
 
 <Text style = {styles.precoEsfirras}> {preco}</Text>
 
-  <Text style = {styles.avaliacaoEsfirras}> {imagem}</Text>
+  <Text style = {styles.avaliacaoEsfirras}> {avaliacao}</Text>
 
    
     </TouchableOpacity>

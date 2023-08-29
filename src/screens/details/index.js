@@ -19,19 +19,19 @@ return(
                  <Image style = {styles.image} source={require(`../../Img/${route.params.imagem}`)} />
                <Stars
     default={2.5}
-    count={10}
+    count={5}
     half={true}
     starSize={50} 
     fullStar={<Icon name={'star'} style={[styles.myStarStyle]}/>}
     emptyStar={<Icon name={'star-outline'} style={[styles.myStarStyle, styles.myEmptyStarStyle]}/>}
     halfStar={<Icon name={'star-half'} style={[styles.myStarStyle]}/>}
   />
-     <Text style={styles.textNota}>
-               {route.params.nota}
+     <Text style={styles.textAvaliacao}>
+               {route.params.avaliacao}
                </Text>
 
-     <Text style={styles.textTitulo}>
-               {route.params.titulo}
+     <Text style={styles.textNome}>
+               {route.params.nome}
          </Text>
             
              
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     
         flex: 1,
     
-        backgroundColor: "#141a29",
+        backgroundColor: "#F4A460",
     
         alignItems: "center",
     
@@ -63,12 +63,12 @@ const styles = StyleSheet.create({
         textShadowRadius: 2,
       },
       myEmptyStarStyle: {
-        color: 'white',
+        color: 'black',
       },
 
       textNota:{
         fontSize:25,
-        color: 'white',
+        color: 'fff',
         fontWeight:'bold',
          marginRight: 75,
          textAlign:'right'
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
       textTitulo:{
           marginRight:500,
         fontSize:25,
-        color: 'white',
+        color: 'fff',
         fontWeight:'bold',
          marginRight: 75,
          textAlign:'right'

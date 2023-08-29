@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, FlatList } from "react-native";
 
 import BannerPizza from "../../components/bannerPizzas";
 
-import pizzas from "../../data/pizzas"
+import Pizzas from "../../data/pizzas"
 
 import Header from "../../components/header";
 
@@ -12,7 +12,8 @@ import CardPizzas from "../../components/bannerPizzas";
 
 import CardItens from "../../components/cardEsfirras/index"
 
-import Series from "../../data/pizzas"
+import Esfirras from "../../data/esfirras"
+import CardEsfirras from "../../components/cardEsfirras/index";
 
 
 
@@ -39,25 +40,32 @@ export default function App() {
 
       showsHorizontalScrollIndicator={false}
 
-        data={Filmes}
+        data={Pizzas}
 
         keyExtractor={(item) => item.id}
 
         renderItem={ ({item}) => (
 
-        
-
-        <CardPizzas
+    
 
         
 
-        titulo = {item.nome}
+        <CardEsfirras
 
-        nota = {item.nota}
+        
+
+        nome= {item.nome}
+
+        avaliacao = {item.avaliacao}
+
+        preco = {item.preco}
 
         imagem = {item.imagem}
 
+
+
         />
+
 
         )}
 
@@ -71,7 +79,7 @@ export default function App() {
                     color: 'white',
                     fontWeight:'bold',
                      marginRight: 75,
-                     textAlign:'center'}}> Series</Text>
+                     textAlign:'center'}}> Esfirras</Text>
 
 
       <FlatList
@@ -80,7 +88,7 @@ export default function App() {
 
       showsHorizontalScrollIndicator={false}
 
-        data={Series}
+        data={Esfirras}
 
         keyExtractor={(item) => item.id}
 
@@ -93,12 +101,14 @@ export default function App() {
         <CardItens
 
         
+        nome= {item.nome}
 
-        titulo = {item.nome}
+        avaliacao = {item.avaliacao}
 
-        nota = {item.nota}
+        preco = {item.preco}
 
         imagem = {item.imagem}
+
 
         />
 
@@ -124,7 +134,7 @@ const styles = StyleSheet.create({
 
     flex: 1,
 
-    backgroundColor: "#141a29",
+    backgroundColor: "#F4A460",
 
     alignItems: "center",
 

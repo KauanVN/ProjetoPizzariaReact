@@ -34,6 +34,13 @@ export default function App() {
 
       <View style={{width:"90%"}}>
 
+        <Text style = {{fontSize:30,
+                color: 'white',
+                fontWeight:'bold',
+                marginLeft:-180,
+                marginRight:-180,
+                textAlign:'center'}}> Pizzas</Text>
+
       <FlatList
 
       horizontal ={true}
@@ -75,12 +82,12 @@ export default function App() {
 
       <View style={{width:"90%"}}>
 
-      <Text style = {{fontSize:25,
+      <Text style = {{fontSize:30,
                     color: 'white',
                     fontWeight:'bold',
-                     marginRight: 75,
+                    marginLeft:-180,
+                     marginRight:-180,
                      textAlign:'center'}}> Esfirras</Text>
-
 
       <FlatList
 

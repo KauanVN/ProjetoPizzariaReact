@@ -17,7 +17,7 @@ const DATA = [
     },
     {
       id: "13",
-      nome: "Esfirra de Chocolate com pedaços de Chocolate",
+      nome: "Esfirra de Chocolate",
       avaliacao: "★★★★★",
       preco: "R$5,00",
       imagem: "13.jpg",

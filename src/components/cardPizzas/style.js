@@ -27,6 +27,11 @@ const styles = StyleSheet.create({
     color: "#fff",
     paddingLeft: 4,
   },
+  ingredientesPizzas: {
+    fontSize: 10,
+    color: "#fff",
+    paddingLeft: 4,
+  },
   
 });
 

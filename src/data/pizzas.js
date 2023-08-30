@@ -5,6 +5,7 @@ const DATA = [
     preco: "R$54,00",
     avaliacao: "★★★★☆",
     imagem: "1.jpg",
+    ingredientes:"Provolone, mussarela, parmesão e catupiry",
   },
   {
     id: "02",
@@ -12,6 +13,7 @@ const DATA = [
     avaliacao: "★★★★★",
     preco: "R$49,00",
     imagem: "2.jpg",
+    ingredientes:"Calabresa e cebola",
   },
   {
     id: "03",
@@ -19,6 +21,7 @@ const DATA = [
     avaliacao: "★★★★★",
     preco: "R$54,00",
     imagem: "3.jpg",
+    ingredientes:"Frango e catupiry",
   },
   {
     id: "04",
@@ -26,6 +29,7 @@ const DATA = [
     avaliacao: "★★★★☆",
     preco: "R$49,00",
     imagem: "4.jpg",
+    ingredientes:"Frango e mussarela",
   },
   {
     id: "05",
@@ -33,6 +37,7 @@ const DATA = [
     avaliacao: "★★★☆☆",
     preco: "R$54,00",
     imagem: "5.jpg",
+    ingredientes:"Lombo fatiado, cebola e mussarela",
   },
   {
     id: "06",
@@ -40,6 +45,7 @@ const DATA = [
     preco: "R$54,00",
     avaliacao: "★★★★★",
     imagem: "6.jpg",
+    ingredientes:"Presunto, ovo, cebola, ervilha e mussarela",
   },
   {
     id: "07",
@@ -47,6 +53,7 @@ const DATA = [
     avaliacao: "★★★★☆",
     preco: "R$54,00",
     imagem: "7.jpg",
+    ingredientes:"Mussarela, tomate e manjericão",
   },
   {
     id: "08",
@@ -54,6 +61,7 @@ const DATA = [
     avaliacao: "★★★★☆",
     preco: "R$59,00",
     imagem: "8.jpg",
+    ingredientes:"Chocolate ao leite e M&M'S",
   },
   {
     id: "09",
@@ -61,6 +69,7 @@ const DATA = [
     preco: "R$59,00",
     avaliacao: "★★★★☆",
     imagem: "9.jpg",
+    ingredientes:"Chocolate ao leite preto&branco e morango",
   },
   {
     id: "10",
@@ -68,6 +77,7 @@ const DATA = [
     preco: "R$49,00",
     avaliacao: "★★★★☆",
     imagem: "10.jpg",
+    ingredientes:"Chocolate ao leite, morango e granulado",
   },
 ];
 

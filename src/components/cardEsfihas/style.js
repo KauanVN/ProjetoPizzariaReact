@@ -1,32 +1,37 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  containerEsfirras: {
+  containerEsfihas: {
     paddingTop: 10,
     paddingBottom: 16,
     paddingRight: 16,
     width: 140,
   },
-  tituloEsfirras: {
+  tituloEsfihas: {
     color: "#fff",
     fontSize: 12,
     padding: 8,
   },
-  precoEsfirras: {
+  precoEsfihas: {
     fontSize: 10,
     color: "#fff",
     paddingLeft: 4,
   },
-  imagemEsfirras: {
+  imagemEsfihas: {
     width: "100%",
     height: 170,
     borderRadius: 8,
   },
-  avaliacaoEsfirras: {
+  avaliacaoEsfihas: {
     fontSize: 10,
     color: "#fff",
     paddingLeft: 4,
   },
+  ingredientesEsfihas: {
+    fontSize: 10,
+    color: "#fff",
+    paddingLeft: 4,
+  }
 
 });
 

@@ -14,7 +14,7 @@ return(
     <View style={styles.container}>
       <Image style={styles.image} source={require(`../../Img/${route.params.imagem}`)} />
   
-      <Text style={styles.titleavaliacao}>Dê sua Avaliação</Text>
+      <Text style={styles.textAvaliacao}>Dê sua Avaliação</Text>
       
       <Stars // Estrelas de Avaliação
         default={2.5}
@@ -26,7 +26,9 @@ return(
         halfStar={<Icon name={'star-half'} style={[styles.myStarStyle]}/>}
       />
   
-      <Text style={styles.titlenome}>{route.params.nome}</Text>
+      <Text style={styles.textNome}>{route.params.nome}</Text>
+
+      <Text style={styles.textIngredientes}>{route.params.ingredientes}</Text>
     </View>
   )
 
@@ -38,7 +40,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F4A460",
     alignItems: "center",
   },
-  titleavaliacao: { // Alterar nome
+  textAvaliacao: { 
     fontSize: 30,
     color: 'white',
     fontWeight: 'bold',
@@ -46,8 +48,16 @@ const styles = StyleSheet.create({
     marginRight: -50, 
     textAlign: 'center'
   },
-  titlenome: { // Alterar nome
+  textNome: { 
     fontSize: 25,
+    color: 'white',
+    fontWeight: 'bold',
+    marginLeft: -50, 
+    marginRight: -50, 
+    textAlign: 'center'
+  },
+  textIngredientes: { 
+    fontSize: 12,
     color: 'white',
     fontWeight: 'bold',
     marginLeft: -50, 

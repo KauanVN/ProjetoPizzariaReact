@@ -10,10 +10,10 @@ import SearchBar from "../../components/searchbar";
 
 import CardPizzas from "../../components/bannerPizzas";
 
-import CardItens from "../../components/cardEsfirras/index"
+import CardItens from "../../components/cardEsfihas/index"
 
-import Esfirras from "../../data/esfirras"
-import CardEsfirras from "../../components/cardEsfirras/index";
+import Esfihas from "../../data/esfihas"
+import CardEsfihas from "../../components/cardEsfihas/index";
 
 
 
@@ -57,7 +57,7 @@ export default function App() {
 
         
 
-        <CardEsfirras
+        <CardEsfihas
 
         
 
@@ -68,6 +68,8 @@ export default function App() {
         preco = {item.preco}
 
         imagem = {item.imagem}
+
+        ingredientes = {item.ingredientes}
 
 
 
@@ -87,7 +89,7 @@ export default function App() {
                     fontWeight:'bold',
                     marginLeft:-180,
                      marginRight:-180,
-                     textAlign:'center'}}> Esfirras</Text>
+                     textAlign:'center'}}> Esfihas</Text>
 
       <FlatList
 
@@ -95,7 +97,7 @@ export default function App() {
 
       showsHorizontalScrollIndicator={false}
 
-        data={Esfirras}
+        data={Esfihas}
 
         keyExtractor={(item) => item.id}
 
@@ -115,6 +117,8 @@ export default function App() {
         preco = {item.preco}
 
         imagem = {item.imagem}
+
+        ingredientes = {item.ingredientes}
 
 
         />

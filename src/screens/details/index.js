@@ -29,6 +29,8 @@ return(
       <Text style={styles.textNome}>{route.params.nome}</Text>
 
       <Text style={styles.textIngredientes}>{route.params.ingredientes}</Text>
+
+      <Text style={styles.textPreco}>{route.params.preco}</Text>
     </View>
   )
 
@@ -60,6 +62,15 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: 'white',
     fontWeight: 'bold',
+    marginLeft: -50, 
+    marginRight: -50, 
+    textAlign: 'center'
+  },
+  textPreco: { 
+    fontSize: 30,
+    color: 'white',
+    fontWeight: 'bold',
+    marginTop:20,
     marginLeft: -50, 
     marginRight: -50, 
     textAlign: 'center'

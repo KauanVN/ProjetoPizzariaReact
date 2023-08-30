@@ -12,10 +12,16 @@ const estilo = StyleSheet.create({
         marginLeft:10
     },
     textHeader :{
-        fontSize:25,
-        color:"white",
-        fontWeight:"bold",
-        marginRight:75
+        fontSize: 28,
+        color: 'white',
+        fontWeight: 'bold',
+        marginTop:20,
+        marginLeft: -50, 
+        marginRight: -50, 
+        textAlign: 'center'
+
+
+        
     }
 
 
